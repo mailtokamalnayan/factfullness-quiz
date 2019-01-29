@@ -1,71 +1,96 @@
-export const quiz =  {
-  "quizTitle": "React Quiz Component Demo",
-  "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
-  "questions": [
+export const quiz = {
+  quizTitle: "React Quiz Component Demo",
+  quizSynopsis:
+    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+  questions: [
     {
-      "question": "How can you access the state of a component from inside of a member function?",
-      "questionType": "text",
-      "answers": [
-        "this.getState()",
-        "this.prototype.stateValue",
-        "this.state",
-        "this.values"
-      ],
-      "correctAnswer": "3",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      question:
+        "In all low-income countries across the world today, how many girls finish primary school?",
+      questionType: "text",
+      answers: ["20 percent", "40 percent", "60 percent"],
+      correctAnswer: "3"
     },
     {
-      "question": "ReactJS is developed by _____?",
-      "questionType": "text",
-      "answers": [
-        "Google Engineers",
-        "Facebook Engineers"
+      question: "Where does the majority of the world population live?",
+      questionType: "text",
+      answers: [
+        "Low-income countries",
+        "Middle-income countries",
+        "High-income countries"
       ],
-      "correctAnswer": "2",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      correctAnswer: "2"
     },
     {
-      "question": "ReactJS is an MVC based framework?",
-      "questionType": "text",
-      "answers": [
-        "True",
-        "False"
-      ],
-      "correctAnswer": "2",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      question:
+        "In the last 20 years, the proportion of the world population living in extreme poverty has...",
+      questionType: "text",
+      answers: ["Almost doubled", "remained almost same", "almost halved"],
+      correctAnswer: "3"
     },
     {
-      "question": "Which of the following concepts is/are key to ReactJS?",
-      "questionType": "text",
-      "answers": [
-        "Component-oriented design",
-        "Event delegation model",
-        "Both of the above",
-      ],
-      "correctAnswer": "3",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      question: "What is the life expectancy of the world today?",
+      questionType: "text",
+      answers: ["50 years", "60 years", "70 years"],
+      correctAnswer: "3"
     },
     {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-      "questionType": "photo",
-      "answers": [
-        "https://dummyimage.com/600x400/000/fff&text=A",
-        "https://dummyimage.com/600x400/000/fff&text=B",
-        "https://dummyimage.com/600x400/000/fff&text=C",
-        "https://dummyimage.com/600x400/000/fff&text=D"
+      question:
+        "There are 2 billion children in the world today, aged 0 to 15 years old. How many children will there be in the year 2100, according to UN?",
+      questionType: "text",
+      answers: ["4 billion", "3 billion", "2 billion"],
+      correctAnswer: "3"
+    },
+    {
+      question:
+        "The UN predicts that by 2100 the world population will have increased by another 4 billion people. The main reason is there will be...",
+      questionType: "text",
+      answers: ["More children", "More adults", "More old people"],
+      correctAnswer: "2"
+    },
+    {
+      question:
+        "How did the number of deaths per year from natural disasters change over the last hundred years?",
+      questionType: "text",
+      answers: [
+        "More than doubled",
+        "Remained same",
+        "Decreased to less than half"
       ],
-      "correctAnswer": "1",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      correctAnswer: "3"
+    },
+    {
+      question:
+        "How many of world's 1-year-old children today have been vaccinated against some disease?",
+      questionType: "text",
+      answers: ["20 percent", "50 percent", "80 percent"],
+      correctAnswer: "3"
+    },
+    {
+      question:
+        "Worldwide, 30-year-old men have spent 10 years in school, on average. How many years have women of the same age spent in school?",
+      questionType: "text",
+      answers: ["9 years", "6 years", "3 years"],
+      correctAnswer: "1"
+    },
+    {
+      question:
+        "In 1996, tigers, giant pandas, and black rhinos were all listed as endangered. How many of these three species are more critically endandered today?",
+      questionType: "text",
+      answers: ["Two of them", "One of them", "None of them"],
+      correctAnswer: "3"
+    },
+    {
+      question: "How many people in the world have some access to electricity?",
+      questionType: "text",
+      answers: ["20 percent", "50 percent", "80 percent"],
+      correctAnswer: "3"
+    },
+    {
+      question:
+        "Global climate experts believe that, over the next 100 years, the average temparature will...",
+      questionType: "text",
+      answers: ["Get warmer", "Remain the same", "Get colder"],
+      correctAnswer: "1"
     }
   ]
-} 
+};
