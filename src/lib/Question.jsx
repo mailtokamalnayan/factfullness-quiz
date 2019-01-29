@@ -208,7 +208,7 @@ class Question extends Component {
                   </div>
                 )}
               </div>
-              <div>
+              <div className="questionProgress">
                 Question {this.state.currentQuestionIndex + 1} of{" "}
                 {questions.length}
               </div>
@@ -262,8 +262,8 @@ class Question extends Component {
           {this.state.endQuiz && (
             <div className="card-body">
               <h2>
-                You have completed the quiz. You got {this.state.correct.length}{" "}
-                out of {questions.length} questions. <br />
+                You got {this.state.correct.length} out of {questions.length}{" "}
+                questions. <br />
               </h2>
               {this.renderQuizResultFilter()}
               {this.renderQuizResultQuestions()}

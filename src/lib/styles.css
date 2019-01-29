@@ -15,22 +15,19 @@ body {
   line-height: 1.5;
 }
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
+  line-height: 1.3;
 }
 .react-quiz-container {
   box-shadow: 0 2px 40px 0 rgba(95, 95, 95, 0.2);
   padding: 2rem;
+  max-height: 640px;
+  overflow: scroll;
 }
 
 .btn {
-  background: #8e2de2; /* fallback for old browsers */
-  background: linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   display: block;
   border: none;
   font-size: 16px;
@@ -38,26 +35,90 @@ h2 {
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
   min-width: 100%;
-  color: white;
   margin-top: 1rem;
   transition: all 0.25s ease-in-out;
+  outline: none;
+  color: white;
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.answerBtn.btn {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(246, 247, 248));
+  color: rgb(33, 35, 37);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(214, 220, 231);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 2px;
+}
+.answerBtn.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .btn:hover {
   cursor: pointer;
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.btn.correct {
+  border: none;
+  color: white;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .btn:first-child {
   margin-top: 2rem;
 }
 
-.quiz-synopsis {
+.questionWrapper h3 {
+  margin: 2rem 0 1.5rem 0;
+}
+.result-answer-wrapper .btn {
   margin-top: 1rem;
 }
+.result-answer-wrapper {
+  margin-bottom: 2rem;
+}
 
-.questionWrapper h3 {
-  line-height: 1.3;
+.result-answer-wrapper h3 {
+  margin: 1rem 0 1rem 0;
+}
+
+.questionProgress {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.quiz-result-filter {
+  margin: 2rem 0;
+}
+
+.quiz-result-filter select {
+  width: 100%;
+  font-size: 18px;
+}
+
+.quiz-synopsis {
+  margin-top: 1rem;
 }
 
 progress {
