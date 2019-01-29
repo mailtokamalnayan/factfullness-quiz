@@ -187,8 +187,11 @@ class Question extends Component {
   render() {
     const { questions } = this.props;
     let question = questions[this.state.currentQuestionIndex];
+    const progressValue =
+      ((this.state.currentQuestionIndex + 1) * 100) / questions.length;
     return (
       <div>
+        <progress max="100" value={progressValue} id="progress" />
         <div className="questionWrapper">
           {!this.state.endQuiz && (
             <div className="questionWrapperBody">
@@ -206,7 +209,7 @@ class Question extends Component {
                 )}
               </div>
               <div>
-                Question {this.state.currentQuestionIndex + 1} of
+                Question {this.state.currentQuestionIndex + 1} of{" "}
                 {questions.length}
               </div>
               <h3>{question.question}</h3>

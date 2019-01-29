@@ -1,7 +1,7 @@
 export const quiz = {
-  quizTitle: "React Quiz Component Demo",
+  quizTitle: "Measure your factfulness",
   quizSynopsis:
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+    "A set of 12 questions can reveal how much factfulness you have. Take a quiz now to know your factfulness score.",
   questions: [
     {
       question:
