@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import Quiz from "../../lib/Quiz";
 import { quiz } from "./quiz";
 import styled from "styled-components";
-import { FiGlobe, FiGithub } from "react-icons/fi";
+import { FiGlobe, FiGithub, FiTwitter } from "react-icons/fi";
 
 const Container = styled.div`
   display: grid;
@@ -26,11 +26,36 @@ const Content = styled.div`
 
 const Header = styled.div`
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Footer = styled.footer`
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem 1rem;
   text-align: center;
+  font-size: 0.8rem;
+  a {
+    color: #b92b27;
+    :hover {
+      text-decoration: none;
+    }
+  }
+`;
+
+const TwitterLink = styled.a`
+  background-image: linear-gradient(rgb(6, 132, 248), rgb(6, 122, 228));
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  svg {
+    margin-right: 0.5rem;
+  }
 `;
 
 function App() {
@@ -38,6 +63,13 @@ function App() {
     <div>
       <Header>
         <FiGlobe size="36" color="#b92b27" />
+        <TwitterLink
+          target="_blank"
+          href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fmailtokamalnayan.github.io%2Ffactfullness-quiz%2F&text=Factfulness%20Quiz:%20https%3A%2F%2Fmailtokamalnayan.github.io%2Ffactfullness-quiz%2F&via=kns008"
+        >
+          <FiTwitter color="white" />
+          Share
+        </TwitterLink>
       </Header>
       <Container>
         <Content>
@@ -75,17 +107,24 @@ function App() {
         <Quiz quiz={quiz} shuffle={true} />
       </Container>
       <Footer>
-        <a href="Github#" target="_blank" title="Project hosted on Github">
-          <FiGithub />
-        </a>
-        Open Source by{" "}
         <a
-          href="https://twitter.com/kns008/"
-          title="Kamal Nayan on Twitter"
+          href="https://github.com/mailtokamalnayan/factfullness-quiz"
           target="_blank"
+          title="Project hosted on Github"
         >
-          @kns008
-        </a>
+          <FiGithub size="24" color="#b92b27" />
+        </a>{" "}
+        <br />
+        <div style={{ opacity: 0.5 }}>
+          Open Source by{" "}
+          <a
+            href="https://twitter.com/kns008/"
+            title="Kamal Nayan on Twitter"
+            target="_blank"
+          >
+            @kns008
+          </a>
+        </div>
       </Footer>
     </div>
   );
