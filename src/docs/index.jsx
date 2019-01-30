@@ -3,11 +3,13 @@ import { render } from "react-dom";
 import Quiz from "../../lib/Quiz";
 import { quiz } from "./quiz";
 import styled from "styled-components";
-import { FiGlobe, FiGithub, FiTwitter } from "react-icons/fi";
+import { FiBookOpen, FiGithub, FiTwitter } from "react-icons/fi";
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @media (min-width: 768px) {
+    grid-template-columns: 1.25fr 1fr;
+  }
   grid-column-gap: 4rem;
   padding: 1rem;
   max-width: 1024px;
@@ -62,7 +64,7 @@ function App() {
   return (
     <div>
       <Header>
-        <FiGlobe size="36" color="#b92b27" />
+        <FiBookOpen size="36" color="#b92b27" />
         <TwitterLink
           target="_blank"
           href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fmailtokamalnayan.github.io%2Ffactfullness-quiz%2F&text=Factfulness%20Quiz:%20https%3A%2F%2Fmailtokamalnayan.github.io%2Ffactfullness-quiz%2F&via=kns008"
