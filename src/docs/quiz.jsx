@@ -1,7 +1,7 @@
 export const quiz = {
   quizTitle: "Measure your factfulness",
   quizSynopsis:
-    "A set of 12 questions can reveal how much factfulness you have. Take a quiz now to know your factfulness score.",
+    "Measure your factfulness by answering this set of 12 questions prepared by Hans Rosling, Ola Rosling and Anna Rosling Rönnlund — authors of the book called Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think.",
   questions: [
     {
       question:

@@ -3,7 +3,12 @@ import { render } from "react-dom";
 import Quiz from "../../lib/Quiz";
 import { quiz } from "./quiz";
 import styled from "styled-components";
-import { FiBookOpen, FiGithub, FiTwitter } from "react-icons/fi";
+import {
+  FiBookOpen,
+  FiGithub,
+  FiTwitter,
+  FiExternalLink
+} from "react-icons/fi";
 
 const Container = styled.div`
   display: grid;
@@ -13,7 +18,7 @@ const Container = styled.div`
   grid-column-gap: 4rem;
   padding: 1rem;
   max-width: 1024px;
-  margin: 4rem auto;
+  margin: 2rem auto;
 `;
 
 const Content = styled.div`
@@ -57,6 +62,39 @@ const TwitterLink = styled.a`
   align-items: center;
   svg {
     margin-right: 0.5rem;
+  }
+`;
+
+const Book = styled.div`
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-column-gap: 1rem;
+  a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+  a.btn {
+    min-width: 0;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.5;
+    margin-top: 0.5rem;
+  }
+  img {
+    max-width: 130px;
   }
 `;
 
@@ -105,6 +143,24 @@ function App() {
               rarely is.
             </li>
           </ul>
+          <Book>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51tvugRSHKL._SX322_BO1,204,203,200_.jpg" />
+            <div>
+              <h1>
+                Factfulness: Ten Reasons We're Wrong About the World--and Why
+                Things Are Better Than You Think
+              </h1>
+              <h2>— by Hans Rosling, Ola Rosling and Anna Rosling Rönnlund</h2>
+              <a
+                target="_blank"
+                href="https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814"
+                class="btn"
+              >
+                <FiExternalLink />
+                Get the book
+              </a>
+            </div>
+          </Book>
         </Content>
         <Quiz quiz={quiz} shuffle={true} />
       </Container>
