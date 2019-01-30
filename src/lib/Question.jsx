@@ -192,6 +192,9 @@ class Question extends Component {
     return (
       <div>
         <progress max="100" value={progressValue} id="progress" />
+        <div className="questionProgress">
+          Question {this.state.currentQuestionIndex + 1} of {questions.length}
+        </div>
         <div className="questionWrapper">
           {!this.state.endQuiz && (
             <div className="questionWrapperBody">
@@ -207,10 +210,6 @@ class Question extends Component {
                     {this.renderExplanation(question, false)}
                   </div>
                 )}
-              </div>
-              <div className="questionProgress">
-                Question {this.state.currentQuestionIndex + 1} of{" "}
-                {questions.length}
               </div>
               <h3>{question.question}</h3>
               {question.answers.map((answer, index) => {

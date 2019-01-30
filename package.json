@@ -47,6 +47,7 @@
     "url": "https://github.com/wingkwong/react-quiz-component.git"
   },
   "dependencies": {
+    "react-icons": "^3.3.0",
     "styled-components": "^4.1.3"
   }
 }

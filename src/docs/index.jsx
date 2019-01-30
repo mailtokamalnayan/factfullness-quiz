@@ -18,6 +18,7 @@ const Content = styled.div`
     padding-left: 0;
     li {
       margin-bottom: 1rem;
+      color: rgb(92, 97, 102);
     }
   }
 `;
